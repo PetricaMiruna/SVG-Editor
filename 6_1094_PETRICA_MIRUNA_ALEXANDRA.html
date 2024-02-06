@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6_1094_PETRICA_MIRUNA_ALEXANDRA.css">
+    <script src="6_1094_PETRICA_MIRUNA_ALEXANDRA.js"></script>
+    <title>Editor SVG</title>
+</head>
+
+<body>
+    <header>
+        <h1>Editor SVG</h1>
+    </header>
+
+    <button onclick="deseneazaDreptunghi()" id="dreptunghi">Dreptunghi</button>
+    <button onclick="deseneazaLinie()" id="linie">Linie</button>
+    <button onclick="deseneazaElipsa()" id="elipsa" >Elipsa</button>
+    <button onclick="undo()">Undo</button>
+    <button onclick="salveazaSVG()">Salveaza SVG</button>
+
+    <input type="color" id="alegeCuloare" onchange="schimbaCuloare()" value="#ca7373">
+    <input type="range" id="alegeGrosime" min="1" max="28" value="2" onchange="schimbaGrosime()">
+    
+    <main>
+    <svg id="editor" contenteditable="true"></svg>   
+    </main>  
+    
+
+</body>
+</html>
